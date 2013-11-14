@@ -311,7 +311,7 @@ class CProfiles {
                 '{votes}' => $sVot,
                 '{act_width}' => $iActiveWidth,
             );
- ///           return strtr(file_get_contents('templates/vote.html'), $aKeys);
+            return strtr(file_get_contents('templates/vote.html'), $aKeys);
         }
     }
 }

@@ -31,7 +31,7 @@ if ($_SESSION['member_id'] && $_SESSION['member_status'] == 'active' && $_SESSIO
         exit;
     }
 
-///   require_once('classes/CChat.php'); // including service class to work with chat
+   require_once('classes/CChat.php'); // including service class to work with chat
 
     if ($_GET['action'] == 'check_new_messages') { // check for new messages
         $iPid = (int)$_SESSION['member_id'];
@@ -71,7 +71,7 @@ if ($_SESSION['member_id'] && $_SESSION['member_status'] == 'active' && $_SESSIO
     }
 
     // get all active rooms
- ///   $sRooms = $GLOBALS['MainChat']->getRooms($iRoom);
+    $sRooms = $GLOBALS['MainChat']->getRooms($iRoom);
 
     $sChatName = 'Main';
     if ($iRoom) {
@@ -80,7 +80,7 @@ if ($_SESSION['member_id'] && $_SESSION['member_status'] == 'active' && $_SESSIO
     }
 
     // get last messages
-///    $sChat = $GLOBALS['MainChat']->getMessages(0, $iRoom);
+    $sChat = $GLOBALS['MainChat']->getMessages(0, $iRoom);
     if ($_GET['action'] == 'get_last_messages') { // regular updating of messages in chat
         $oJson = new Services_JSON();
         header('Content-type: application/json');
@@ -97,7 +97,7 @@ if ($_SESSION['member_id'] && $_SESSION['member_status'] == 'active' && $_SESSIO
     }
 
     // get input form
-///    $sInput = $GLOBALS['MainChat']->getInputForm($iRoom);
+    $sInput = $GLOBALS['MainChat']->getInputForm($iRoom);
 
     if ($_POST['message']) { // POST-ing of message
         $iPostRoom = (int)$_POST['room'];

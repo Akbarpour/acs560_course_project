@@ -56,4 +56,4 @@ $aKeys = array(
     '{actions}' => $GLOBALS['CProfiles']->getBlockMemberAction($iPid),
     '{rate}' => $GLOBALS['CProfiles']->getBlockRate($iPid),
 );
-/// echo strtr(file_get_contents('templates/profile_page.html'), $aKeys);
+ echo strtr(file_get_contents('templates/profile_page.html'), $aKeys);
