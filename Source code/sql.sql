@@ -20,7 +20,7 @@ CREATE TABLE `cs_profiles` (
 INSERT INTO `cs_profiles` (`name`, `first_name`, `last_name`, `email`, `password`, `salt`, `status`, `role`, `about`, `date_reg`, `rate`, `rate_count`) VALUES
 ('user', 'user', 'user', 'user@user.com', 'b88c654d6c68fc37f4dda1d29935235eea9a845b', 'testing', 'active', 1, 'Few words about test user', '2013-10-14 00:00:00', 0, 0),
 ('moderator', 'moderator', 'moderator', 'moderator@moderator.com', 'b88c654d6c68fc37f4dda1d29935235eea9a845b', 'testing', 'active', 4, 'Few words about moderator', '2013-10-14 00:00:00', 0, 0),
-('admin', 'admin', 'admin', 'admin@admin.com', 'b88c654d6c68fc37f4dda1d29935235eea9a845b', 'testing', 'active', 4, 'Few words about admin', '2013-10-14 00:00:00', 0, 0);
+('admin', 'admin', 'admin', 'admin@admin.com', 'b88c654d6c68fc37f4dda1d29935235eea9a845b', 'testing', 'active', 5, 'Few words about admin', '2013-10-14 00:00:00', 0, 0);
 
 
 CREATE TABLE `cs_messages` (
